@@ -1,0 +1,32 @@
+services:
+  seller:
+    build:
+      context: ..
+      dockerfile: demo/Dockerfile
+    command: ["python", "/work/demo/seller.py"]
+    networks:
+      isolated:
+        ipv4_address: 172.28.47.2
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+  questioner:
+    build:
+      context: ..
+      dockerfile: demo/Dockerfile
+    command: ["sh", "-c", "sleep 2; python /work/adapter/questioner.py < /work/demo/input.json"]
+    environment:
+      ENVOY_FIXED_CONFIG: /work/demo/config.json
+    networks: [isolated]
+    depends_on: [seller]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 32
+    mem_limit: 128m
+networks:
+  isolated:
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.28.47.0/24

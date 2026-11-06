@@ -1,0 +1,25 @@
+name: Inbox Envoy checks
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify skill entrypoint and references
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('SKILL.md'); assert p.exists(); text=p.read_text(); assert text.startswith('---\n'); assert 'name: inbox-envoy' in text
+          for name in ('references/faq.md','references/agent-exchange.md','references/opportunity-research.md','SECURITY.md','LICENSE'):
+              assert Path(name).is_file(),name
+          print('Skill references present')
+          PY
+      - name: Run questioner tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Run local fixture smoke test
+        run: python demo/smoke_local.py

@@ -124,7 +124,7 @@ Inbox Envoy is a portable skill for personal agents that can load skill instruct
 
 After separately opting in to sender screening, an agent can request an offer summary, intended audience and one supporting public URL (or an explicit statement that none is available). A general guidance link is enabled for **newly approved** screening templates and can be turned off. Inbox Envoy attribution in screening emails is **off by default**, separately optional and shown only on the first request. No preapproved customized active sender template may be changed without reapproval. See [`references/screening-d2a.md`](references/screening-d2a.md).
 
-Users may **manually** add an optional, unbranded signature line; the skill never edits signatures. See [`templates/optional-signature.md`](templates/optional-signature.md). Public sender guidance: https://salespeak.ai/agent-screened-email/ (verify page deployment before promoting).
+Users may **manually** add an optional, unbranded signature line; the skill never edits signatures. See [`templates/optional-signature.md`](templates/optional-signature.md). Public sender guidance: [salespeak.ai/agent-screened-email](https://salespeak.ai/agent-screened-email/).
 <!-- END D1-D2A 2026-11-06 -->
 
 ## Beta status and open verification items

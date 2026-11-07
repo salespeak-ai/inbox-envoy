@@ -1,0 +1,15 @@
+{
+  "name": "inbox-envoy",
+  "owner": { "name": "Salespeak", "url": "https://salespeak.ai" },
+  "metadata": {
+    "description": "Inbox Envoy: an open skill that lets your personal AI agent protect your inbox."
+  },
+  "plugins": [
+    {
+      "name": "inbox-envoy",
+      "source": "./",
+      "description": "Lets your personal AI agent protect your inbox, keep important mail visible, and research unfamiliar offers before they reach you.",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "inbox-envoy",
+  "version": "0.1.0-beta.2",
+  "description": "Lets your personal AI agent protect your inbox, keep important mail visible, and research unfamiliar offers before they reach you.",
+  "author": { "name": "Salespeak", "url": "https://salespeak.ai" },
+  "homepage": "https://github.com/salespeak-ai/inbox-envoy",
+  "repository": "https://github.com/salespeak-ai/inbox-envoy",
+  "license": "MIT",
+  "keywords": ["email", "inbox", "triage", "personal-agent", "productivity"],
+  "skills": ["./"]
+}

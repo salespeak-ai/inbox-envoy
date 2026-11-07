@@ -22,6 +22,13 @@ Inbox Envoy is designed for intelligent personal agents that can load a skill (a
 
 4. **Expect a read-only start.** The agent should explain its modes, show what it can actually do, preview a few classifications, and ask before any label, schedule, research or outbound step. If it claims capabilities it has not verified, stop and ask it to check. Full first-run expectations are in [`INSTALL.md`](INSTALL.md).
 
+### Other install routes
+
+- **Skills CLI** (any agent it supports): `npx skills add salespeak-ai/inbox-envoy`
+- **Claude Code plugin marketplace:** `/plugin marketplace add salespeak-ai/inbox-envoy`, then `/plugin install inbox-envoy@inbox-envoy`
+
+Both install the same `SKILL.md` and references. Installing still grants no mailbox access and enables nothing; onboarding starts in Observe.
+
 ## Who maintains this
 
 Inbox Envoy is maintained by [Salespeak](https://salespeak.ai). Salespeak also sells company-side AI products, including AI agents that answer buyer questions for vendors. Inbox Envoy is independent of those products:

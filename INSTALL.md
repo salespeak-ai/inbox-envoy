@@ -22,3 +22,10 @@ Tell the agent to replace the skill instructions, preserve learned preferences, 
 ## Host-native templates
 
 See `templates/GROK-BOT-TEMPLATE.md` and `templates/HOST-ADAPTER.md` for a copy-ready bot prompt and an acceptance checklist. They are template text, not deployed bots or certified integrations.
+
+
+<!-- BEGIN D1-D2A 2026-11-06 -->
+## Portable installation and D2a setup
+
+Import the skill with your personal agent's supported skill or instruction workflow. Begin in Observe/read-only; check mail, scheduler, draft and isolation tools before offering any other mode. Sender contact remains a distinct opt-in. Preview the full new evidence-request template before authorizing changes, particularly when upgrading an existing customized active template. Default skill attribution is off. Optional signature wording is manual only.
+<!-- END D1-D2A 2026-11-06 -->

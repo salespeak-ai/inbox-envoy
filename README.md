@@ -15,7 +15,7 @@ This is **a skill, not an email provider, separate inbox, continuous-monitoring 
 Inbox Envoy is designed for intelligent personal agents that can load a skill (a folder with `SKILL.md` plus reference files) and that already have authorized access to your mailbox.
 
 1. **Download** [`skill.zip`](https://github.com/salespeak-ai/inbox-envoy/releases/download/v0.1.0-beta.1/skill.zip) from the [`v0.1.0-beta.1` prerelease](https://github.com/salespeak-ai/inbox-envoy/releases/tag/v0.1.0-beta.1) (all releases: [Releases](https://github.com/salespeak-ai/inbox-envoy/releases)). Check the SHA-256 in the release notes. The archive contains one folder, `inbox-envoy/`, with `SKILL.md` at its root.
-2. **Give it to your agent** using that agent's own skill or custom-instruction import. Hosts that load skills from a folder on disk usually want the unzipped `inbox-envoy/` folder in their skills directory. Exact steps vary by host, and no host has passed the acceptance suite yet (see [`COMPATIBILITY.md`](COMPATIBILITY.md)).
+2. **Give it to your agent** using that agent's own skill or custom-instruction import. Hosts that load skills from a folder on disk usually want the unzipped `inbox-envoy/` folder in their skills directory. Exact steps vary by host. See [`COMPATIBILITY.md`](COMPATIBILITY.md) for the required host capabilities and safe modes.
 3. **Paste this to your agent:**
 
    > Install the Inbox Envoy skill from the attached ZIP or this repository using your supported skill workflow. Read `SKILL.md`. Check your actual mailbox, scheduler, state, and research capabilities, then walk me through onboarding. Start in Observe with no mailbox changes and no external contact. Show the operational readiness report. Do not schedule or change anything until I approve.
@@ -28,9 +28,10 @@ Inbox Envoy is maintained by [Salespeak](https://salespeak.ai). Salespeak also s
 
 - **No Salespeak service required.** The skill runs entirely inside your own personal agent. It contains no Salespeak endpoint, account, API key or hosted backend.
 - **No buyer-private data goes to Salespeak.** The skill and the reference client send no telemetry, analytics or callbacks to Salespeak or anyone else. Your host agent, model provider and mail provider still process data under their own policies.
+- **Optional guidance link in screening emails.** If you separately enable sender screening, the first evidence request includes a link to a general guidance page on salespeak.ai by default; you can turn it off. The link carries no per-user tracking code and contains nothing about you. Inbox Envoy attribution is off unless you opt in.
 - **No preferential treatment.** A company that uses Salespeak, or publishes any agent at all, gets no boost in relevance, classification or screening. Company-agent answers are treated as unverified seller claims, the same as any other seller source.
 
-You can check all three by reading the package: it is plain instructions plus a small standard-library Python reference client with no default destination.
+You can check these by reading the package: it is plain instructions plus a small standard-library Python reference client with no default destination.
 
 Why a company that serves sellers maintains a buyer-side tool: [Salespeak for buyers](https://salespeak.ai/for-buyers/).
 
@@ -116,13 +117,22 @@ Reading a published PAP/A2A agent description is not the same as talking to that
 
 No arbitrary link-clicking or remote instructions. Public agent discovery is restricted to verified domains, and only when host security controls allow it. Private relevance evaluation is separate from external interaction. No automatic seller responses, calendar booking, terms acceptance, subscriptions, private disclosure or vendor preference. Do not advertise any capability that a particular host cannot enforce.
 
+<!-- BEGIN D1-D2A 2026-11-06 -->
+## Agent-screened email and optional signature
+
+Inbox Envoy is a portable skill for personal agents that can load skill instructions or equivalent custom instructions and have an authorized mailbox connection. Host-specific tools, security isolation and scheduling determine available actions. Start read-only; autonomous sender contact requires separately verified safeguards and permission, otherwise use draft-only.
+
+After separately opting in to sender screening, an agent can request an offer summary, intended audience and one supporting public URL (or an explicit statement that none is available). A general guidance link is enabled for **newly approved** screening templates and can be turned off. Inbox Envoy attribution in screening emails is **off by default**, separately optional and shown only on the first request. No preapproved customized active sender template may be changed without reapproval. See [`references/screening-d2a.md`](references/screening-d2a.md).
+
+Users may **manually** add an optional, unbranded signature line; the skill never edits signatures. See [`templates/optional-signature.md`](templates/optional-signature.md). Public sender guidance: https://salespeak.ai/agent-screened-email/ (verify page deployment before promoting).
+<!-- END D1-D2A 2026-11-06 -->
+
 ## Beta status and open verification items
 
-This is a public beta (`0.1.0-beta.1`). Open items, tracked transparently:
+This is a public beta. Open items, tracked transparently:
 
-- **Host compatibility:** no named personal agent has passed [`tests/ACCEPTANCE.md`](tests/ACCEPTANCE.md) yet. See [`COMPATIBILITY.md`](COMPATIBILITY.md).
-- **Live company-agent conversations:** disabled. The OS-level isolation demo and a real consenting-endpoint session have not been verified. The local fixture is a developer demo, not a production protocol integration.
-- **Name clearance:** formal trademark, domain and skill-registry clearance for "Inbox Envoy" is still open.
+- **Personal-agent portability:** the skill works with instruction-capable personal agents; available mailbox, scheduling, and sending actions depend on each host’s permissions and verified safeguards. See [`COMPATIBILITY.md`](COMPATIBILITY.md).
+- **Live company-agent conversations:** disabled. The local Docker isolation demo passes, but no session with a real consenting company endpoint has been run. The local fixture is a developer demo, not a production protocol integration.
 
 Maintainer and release process docs live in [`docs/maintainers/`](docs/maintainers/). Report vulnerabilities privately through [GitHub private vulnerability reporting](https://github.com/salespeak-ai/inbox-envoy/security/advisories/new), never in public issues (see [`SECURITY.md`](SECURITY.md)).
 

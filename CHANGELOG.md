@@ -1,5 +1,13 @@
 # Changelog
 
+<!-- BEGIN D1-D2A 2026-11-06 -->
+## Unreleased: D1 + D2a
+
+- Added optional manual, unbranded email signature copy and public landing-page component (website integration separate).
+- Added structured, first-line AI-disclosed sender evidence request; independently controlled guidance link; explicit opt-in skill attribution (default off); upgrade consent guidance and status controls.
+- Clarified personal-agent portability versus host-specific permissions and autonomous-send verification; retained all original sending safeguards. No D2b protocol or telemetry.
+<!-- END D1-D2A 2026-11-06 -->
+
 ## 0.1.0-beta.1 (2026-11-06)
 
 - Consolidated portable skill, onboarding, autonomy lifecycle, feedback and public opportunity research.

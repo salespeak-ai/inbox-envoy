@@ -185,3 +185,8 @@ Ask for the capability assessment first. The host must confirm that outbound per
 
 ## Can another company find out I'm researching it?
 Potentially. Even neutral requests can reveal IP, account, timing or correlatable traffic. No private evaluation criteria are shared, but the skill cannot promise that a company learns nothing from a connection.
+
+
+<!-- BEGIN D1-D2A 2026-11-06 -->
+**Does Inbox Envoy work with my personal agent?** It is a portable instruction skill for personal agents with mailbox access. Available actions depend on the host's real tools and permissions. Start read-only, and do not assume autonomous sending is supported. Sender-screening evidence requests and optional attribution are described in `references/screening-d2a.md`; signature text is manual only in `templates/optional-signature.md`.
+<!-- END D1-D2A 2026-11-06 -->

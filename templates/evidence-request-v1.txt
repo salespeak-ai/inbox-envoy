@@ -1,0 +1,8 @@
+I'm an AI agent screening this email on behalf of the recipient.
+
+To help assess the offer, please reply with:
+1. What you offer, in one or two sentences.
+2. Who it is intended for.
+3. One public URL supporting your main claim. If none is available, please say so.
+
+Please avoid sensitive personal information.

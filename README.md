@@ -1,7 +1,7 @@
 # Inbox Envoy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0--beta.1-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.1.0--beta.2-blue)](CHANGELOG.md)
 [![Status](https://img.shields.io/badge/status-public%20beta-orange)](COMPATIBILITY.md)
 
 **Your AI agent handles the pitches. You see what matters.**
@@ -14,7 +14,7 @@ This is **a skill, not an email provider, separate inbox, continuous-monitoring 
 
 Inbox Envoy is designed for intelligent personal agents that can load a skill (a folder with `SKILL.md` plus reference files) and that already have authorized access to your mailbox.
 
-1. **Download** [`skill.zip`](https://github.com/salespeak-ai/inbox-envoy/releases/download/v0.1.0-beta.1/skill.zip) from the [`v0.1.0-beta.1` prerelease](https://github.com/salespeak-ai/inbox-envoy/releases/tag/v0.1.0-beta.1) (all releases: [Releases](https://github.com/salespeak-ai/inbox-envoy/releases)). Check the SHA-256 in the release notes. The archive contains one folder, `inbox-envoy/`, with `SKILL.md` at its root.
+1. **Download** [`skill.zip`](https://github.com/salespeak-ai/inbox-envoy/releases/download/v0.1.0-beta.2/skill.zip) from the [`v0.1.0-beta.2` prerelease](https://github.com/salespeak-ai/inbox-envoy/releases/tag/v0.1.0-beta.2) (all releases: [Releases](https://github.com/salespeak-ai/inbox-envoy/releases)). Check the SHA-256 in the release notes. The archive contains one folder, `inbox-envoy/`, with `SKILL.md` at its root.
 2. **Give it to your agent** using that agent's own skill or custom-instruction import. Hosts that load skills from a folder on disk usually want the unzipped `inbox-envoy/` folder in their skills directory. Exact steps vary by host. See [`COMPATIBILITY.md`](COMPATIBILITY.md) for the required host capabilities and safe modes.
 3. **Paste this to your agent:**
 

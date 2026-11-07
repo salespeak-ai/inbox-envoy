@@ -32,6 +32,8 @@ Inbox Envoy is maintained by [Salespeak](https://salespeak.ai). Salespeak also s
 
 You can check all three by reading the package: it is plain instructions plus a small standard-library Python reference client with no default destination.
 
+Why a company that serves sellers maintains a buyer-side tool: [Salespeak for buyers](https://salespeak.ai/for-buyers/).
+
 ## First release: buyer-side skill and optional conversations
 
 This public beta is distributed through the user's existing personal agent. It includes the complete core skill, installation/host templates, a research-first opportunity workflow, and a **restricted local agent-to-agent reference client**. The reference client is runnable against a controlled test company agent; it is **not a shipping autonomous connector to arbitrary live PAP/A2A/MCP endpoints**. Real interactive sessions remain off until a host can demonstrate isolation and a compatible, approved endpoint. See `references/agent-exchange.md`, `adapter/README.md`, and `SECURITY.md`.

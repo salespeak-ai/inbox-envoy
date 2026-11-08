@@ -40,6 +40,10 @@ Inbox Envoy is maintained by [Salespeak](https://salespeak.ai). Salespeak also s
 
 You can check these by reading the package: it is plain instructions plus a small standard-library Python reference client with no default destination.
 
+## Privacy
+
+Salespeak receives no data from Inbox Envoy, and the package retains nothing outside your host. What leaves your agent, and when: [`PRIVACY.md`](PRIVACY.md).
+
 Why a company that serves sellers maintains a buyer-side tool: [Salespeak for buyers](https://salespeak.ai/for-buyers/).
 
 ## First release: buyer-side skill and optional conversations

@@ -42,7 +42,7 @@ You can check these by reading the package: it is plain instructions plus a smal
 
 ## Privacy
 
-Salespeak receives no data from Inbox Envoy, and the package retains nothing outside your host. What leaves your agent, and only after you opt in: [`PRIVACY.md`](PRIVACY.md).
+Salespeak receives no data from Inbox Envoy, and the package retains nothing outside your host. What leaves your agent, and when: [`PRIVACY.md`](PRIVACY.md).
 
 Why a company that serves sellers maintains a buyer-side tool: [Salespeak for buyers](https://salespeak.ai/for-buyers/).
 

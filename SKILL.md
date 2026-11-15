@@ -128,7 +128,7 @@ See `INSTALL.md`, `COMPATIBILITY.md`, `SECURITY.md`, and `references/faq.md` whe
 <!-- BEGIN D1-D2A 2026-11-06 -->
 ## D1 and D2a: optional signature and sender evidence requests
 
-For sender screening use `references/screening-d2a.md` in addition to `references/screening.md`. It defines the optional guidance-link preference, separately opt-in attribution (OFF by default), first-message template `templates/evidence-request-v1.txt`, preview/consent and status controls. These instructions do NOT grant additional sending permission or override any original screening safety rule. Preserve existing customized/approved sending templates until the user reapproves a change. No disclosure of private buyer information to external senders or agents without the buyer's explicit request.
+For sender screening use `references/screening-d2a.md` in addition to `references/screening.md`. It defines the optional guidance-link preference (OFF by default), separately opt-in attribution (OFF by default), first-message template `templates/evidence-request-v1.txt`, preview/consent and status controls. These instructions do NOT grant additional sending permission or override any original screening safety rule. Preserve existing customized/approved sending templates until the user reapproves a change. No disclosure of private buyer information to external senders or agents without the buyer's explicit request.
 
 The optional **manual** signature wording is in `templates/optional-signature.md`. Never modify mail-provider signature settings or outgoing non-screening messages automatically.
 <!-- END D1-D2A 2026-11-06 -->

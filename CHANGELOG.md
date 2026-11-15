@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0-beta.3 (2026-11-14)
+
+- The optional guidance link to salespeak.ai/agent-screened-email in sender evidence requests is now **off by default**. It is opt-in, the same as attribution. Screening itself stays off until separately approved.
+- Existing beta.2 setups that already approved sender screening: say `Turn off the screening guidance link` to match the new default.
+- No other behavior changes. No new permissions, schedules or telemetry.
+
 <!-- BEGIN D1-D2A 2026-11-06 -->
 ## 0.1.0-beta.2 (2026-11-06): D1 + D2a
 

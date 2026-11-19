@@ -30,7 +30,7 @@ Inbox Envoy is designed for intelligent personal agents that can load a skill (a
 
 - **Skills CLI** (any agent it supports): `npx skills add salespeak-ai/inbox-envoy`
 - **Claude Code plugin marketplace:** `/plugin marketplace add salespeak-ai/inbox-envoy`, then `/plugin install inbox-envoy@inbox-envoy`
-- **Try it without your mailbox:** point your agent at [`examples/test-inbox/`](examples/test-inbox/), eight made-up emails with a separate answer key.
+- **Try it without your mailbox:** point your agent at [`examples/test-inbox/`](examples/test-inbox/), nine made-up emails with a separate answer key.
 
 Both install the same `SKILL.md` and references. Installing still grants no mailbox access and enables nothing; onboarding starts in Observe.
 

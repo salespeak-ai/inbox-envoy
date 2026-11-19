@@ -1,0 +1,11 @@
+From: Fixture Service-E <notices@fixture-service-e.invalid>
+To: participant-a@fixture-co-a.invalid
+Subject: Automated notice: room access expires
+Date: Sat, 07 Nov 2026 09:31:00 -0800
+Message-ID: <F04@fixture.invalid>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-Synthetic: true
+X-Fixture-Id: F04
+
+This automatic notice confirms your booked workshop room access code expires tomorrow. Renew through the venue portal you normally use if access is still needed.

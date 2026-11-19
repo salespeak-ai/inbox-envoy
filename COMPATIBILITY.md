@@ -11,6 +11,8 @@ Inbox Envoy is designed for personal agents capable of consuming an Agent Skills
 
 Do not interpret this table as asserting a platform feature. A platform passes when a fresh agent completes tests in `tests/ACCEPTANCE.md`: discover permissions, preview sample, create schedule *with permission*, verify next run, reconcile correction, safely downgrade, and report outbound status accurately.
 
+**Tested so far:** a clean install of v0.1.0-beta.3 into Claude Code 2.1.202, by `skill.zip` and by `npx skills add`, followed by a read-only run on the practice inbox in `examples/test-inbox/`, passed on Nov 17, 2026. This is not a live-mailbox test and not a full `tests/ACCEPTANCE.md` pass.
+
 
 <!-- BEGIN D1-D2A 2026-11-06 -->
 ## Personal-agent portability and capabilities

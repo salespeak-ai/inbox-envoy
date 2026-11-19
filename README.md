@@ -6,6 +6,10 @@
 
 **Your AI agent handles the pitches. You see what matters.**
 
+![Claude Code running Inbox Envoy on a practice inbox of eight made-up emails](.github/media/observe-run.gif)
+
+<sub>Claude Code 2.1.202 running Inbox Envoy v0.1.0-beta.3 on Nov 17, 2026, sorting eight made-up emails. Nothing was connected, changed or sent. One of the eight tries to give the agent orders; it gets flagged, not obeyed.</sub>
+
 An open, portable skill that teaches an existing personal agent to protect your inbox, organize mail, highlight opportunities, and, with separate permission, investigate an uncertain unsolicited offer. When possible it researches public company documentation or published company agents (PAP, A2A, MCP); where evidence is insufficient it can prepare or, on appropriately isolated hosts, conduct a limited screening conversation.
 
 This is **a skill, not an email provider, separate inbox, continuous-monitoring service, or new mailbox connector**. The personal agent must already have the necessary mail tools and scheduling capability. Installation by itself never grants access or enables sending.
@@ -26,6 +30,7 @@ Inbox Envoy is designed for intelligent personal agents that can load a skill (a
 
 - **Skills CLI** (any agent it supports): `npx skills add salespeak-ai/inbox-envoy`
 - **Claude Code plugin marketplace:** `/plugin marketplace add salespeak-ai/inbox-envoy`, then `/plugin install inbox-envoy@inbox-envoy`
+- **Try it without your mailbox:** point your agent at [`examples/test-inbox/`](examples/test-inbox/), eight made-up emails with a separate answer key.
 
 Both install the same `SKILL.md` and references. Installing still grants no mailbox access and enables nothing; onboarding starts in Observe.
 
@@ -37,6 +42,8 @@ Inbox Envoy is maintained by [Salespeak](https://salespeak.ai). Salespeak also s
 - **No buyer-private data goes to Salespeak.** The skill and the reference client send no telemetry, analytics or callbacks to Salespeak or anyone else. Your host agent, model provider and mail provider still process data under their own policies.
 - **Optional guidance link in screening emails.** If you separately enable sender screening, you can choose to add a link to a general guidance page on salespeak.ai to the first evidence request. It is off unless you turn it on. The link carries no per-user tracking code and contains nothing about you. Inbox Envoy attribution is off unless you opt in.
 - **No preferential treatment.** A company that uses Salespeak, or publishes any agent at all, gets no boost in relevance, classification or screening. Company-agent answers are treated as unverified seller claims, the same as any other seller source.
+
+skills.sh still shows a Snyk "Fail" from its Nov 13 scan. The one real finding, a salespeak.ai link that was on by default in screening emails, has been off by default since v0.1.0-beta.3, and the other two flags say the skill reads your email and proposes a schedule you approve, which is the job.
 
 You can check these by reading the package: it is plain instructions plus a small standard-library Python reference client with no default destination.
 

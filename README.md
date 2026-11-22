@@ -1,7 +1,7 @@
 # Inbox Envoy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0--beta.3-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.1.0--beta.4-blue)](CHANGELOG.md)
 [![Status](https://img.shields.io/badge/status-public%20beta-orange)](COMPATIBILITY.md)
 
 **Your AI agent handles the pitches. You see what matters.**

@@ -4,9 +4,9 @@ Inbox Envoy is designed for personal agents capable of consuming an Agent Skills
 
 | Surface | Skill delivery | Live mailbox integration | Unattended tasks | Live company-agent questioner | Status |
 | --- | --- | --- | --- | --- | --- |
-| Claude environments | Native skill/import where supported | Host-dependent | Host-dependent | Disabled without enforced isolation | Not verified by this release |
+| Claude environments | Native skill/import where supported | Host-dependent | Host-dependent | Disabled without enforced isolation | Claude Code 2.1.202: clean install of v0.1.0-beta.3 and a practice-inbox run passed Nov 17, 2026. Not a live-mailbox test. Other Claude environments not verified. |
 | ChatGPT | Host-specific installation | Host-dependent | Host-dependent | Disabled without enforced isolation | Not verified by this release |
-| Grok bot or template | Template adaptation | Host-dependent | Host-dependent | Disabled without enforced isolation | Template provided, not tested |
+| Grok bot or template | Template adaptation | Host-dependent | Host-dependent | Disabled without enforced isolation | v0.1.0-beta.4 skill files loaded in a Grok Bot agent session passed the 9-email practice inbox (preview mode, both injections flagged), Nov 20, 2026. Template import, live mailbox, labels and schedules not tested; triage isolation is instruction-only. |
 | Other personal agents | Host-specific installation | Host-dependent | Host-dependent | Disabled without enforced isolation | Not verified by this release |
 
 Do not interpret this table as asserting a platform feature. A platform passes when a fresh agent completes tests in `tests/ACCEPTANCE.md`: discover permissions, preview sample, create schedule *with permission*, verify next run, reconcile correction, safely downgrade, and report outbound status accurately.
